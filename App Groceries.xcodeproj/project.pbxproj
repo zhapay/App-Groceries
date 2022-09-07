@@ -19,6 +19,7 @@
 		4B5897BB28B1108B00B431BF /* AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5897BA28B1108B00B431BF /* AppImage.swift */; };
 		4B5897BE28B110FB00B431BF /* ImageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5897BD28B110FB00B431BF /* ImageProtocol.swift */; };
 		7A5170F41CF54038502C4EA6 /* Pods_App_Groceries.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F2A3B896E6ECB01D35F0DAC /* Pods_App_Groceries.framework */; };
+		8442462528B6663800FF0DAB /* MainLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8442462428B6663800FF0DAB /* MainLocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		4B5897BD28B110FB00B431BF /* ImageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProtocol.swift; sourceTree = "<group>"; };
 		5F30A89066C2E5CBC828F0EE /* Pods-App Groceries.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App Groceries.debug.xcconfig"; path = "Target Support Files/Pods-App Groceries/Pods-App Groceries.debug.xcconfig"; sourceTree = "<group>"; };
 		6F2A3B896E6ECB01D35F0DAC /* Pods_App_Groceries.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App_Groceries.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8442462428B6663800FF0DAB /* MainLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLocationViewController.swift; sourceTree = "<group>"; };
 		AF2996DB9E4A7BC5AC35E223 /* Pods-App Groceries.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App Groceries.release.xcconfig"; path = "Target Support Files/Pods-App Groceries/Pods-App Groceries.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -73,9 +75,9 @@
 		4B58979528B1081100B431BF /* App Groceries */ = {
 			isa = PBXGroup;
 			children = (
+				8442462028B659F500FF0DAB /* CustomViews */,
 				4B5897BC28B110ED00B431BF /* Protocols */,
 				4B5897B728B10E8300B431BF /* Constants */,
-				4B5897B628B10DFF00B431BF /* CustomViews */,
 				4B5897B528B10DF700B431BF /* NetworkManager */,
 				4B5897B228B10CA700B431BF /* Extensions */,
 				4B5897AD28B10A1600B431BF /* Model */,
@@ -97,6 +99,7 @@
 		4B5897AE28B10A2E00B431BF /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				8442462328B6661800FF0DAB /* LocationPage */,
 				4B5897B128B10A7D00B431BF /* OnboardingScreen */,
 			);
 			path = Module;
@@ -137,13 +140,6 @@
 			path = NetworkManager;
 			sourceTree = "<group>";
 		};
-		4B5897B628B10DFF00B431BF /* CustomViews */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CustomViews;
-			sourceTree = "<group>";
-		};
 		4B5897B728B10E8300B431BF /* Constants */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,6 +157,21 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		8442462028B659F500FF0DAB /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		8442462328B6661800FF0DAB /* LocationPage */ = {
+			isa = PBXGroup;
+			children = (
+				8442462428B6663800FF0DAB /* MainLocationViewController.swift */,
+			);
+			path = LocationPage;
+			sourceTree = "<group>";
+		};
 		AB4A7A1FC685578ECC8AD980 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,7 +186,6 @@
 				5F30A89066C2E5CBC828F0EE /* Pods-App Groceries.debug.xcconfig */,
 				AF2996DB9E4A7BC5AC35E223 /* Pods-App Groceries.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -296,6 +306,7 @@
 			files = (
 				4B5897BB28B1108B00B431BF /* AppImage.swift in Sources */,
 				4B58979B28B1081100B431BF /* OnboardingViewController.swift in Sources */,
+				8442462528B6663800FF0DAB /* MainLocationViewController.swift in Sources */,
 				4B5897B928B10E9200B431BF /* AppColor.swift in Sources */,
 				4B5897BE28B110FB00B431BF /* ImageProtocol.swift in Sources */,
 				4B5897B428B10CBD00B431BF /* Ext + UIView.swift in Sources */,

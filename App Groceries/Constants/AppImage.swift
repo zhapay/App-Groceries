@@ -8,6 +8,8 @@
 import Foundation
 
 enum AppImage: String, ImageProtocol {
-  case onboardingScreen
+    case onboardingScreen
+    case iconImage
+    case back
 }
 

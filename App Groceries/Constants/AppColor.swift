@@ -12,8 +12,7 @@ enum AppColor {
 
     var uiColor: UIColor {
         switch self {
-        case .green: return UIColor(rgb: 83, 177, 117, alpha: 1)
-     
+        case .green: return UIColor(rgb: 83, 177, 117)
         }
     }
 
